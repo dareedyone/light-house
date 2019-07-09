@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=   , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<canvas id="myCanva" width="1000" height="600" style="background-color: gray; border: 2px solid rgb(253, 166, 5); margin-left: 150px;">
+    drawing
+</canvas>
+
+
+
+
+
+
+    <script>
+        var ctx = myCanva.getContext('2d');
+        ctx.beginPath();
+        ctx.moveTo(500, 20);
+        ctx.lineTo(200, 100);
+        ctx.lineTo(800, 100);
+        // ctx.closePath();
+        ctx.fillStyle = 'rgb(214, 142, 7)'; 
+      
+        ctx.fill();
+        ctx.stroke();
+        
+        
+        ctx.beginPath();
+        ctx.moveTo(250, 100);
+        ctx.lineTo(250, 500);
+        ctx.lineTo(750, 500);
+        ctx.lineTo(750, 100);
+        ctx.closePath();
+        ctx.fillStyle = 'orange';
+        ctx.fill();
+        ctx.stroke();
+
+        // ctx.beginPath();
+        ctx.fillStyle = 'rgb(214, 142, 7)';
+        ctx.strokeRect(300, 150, 100, 100);
+        
+        
+
+        ctx.fillRect(450, 150, 100, 250);
+
+        ctx.strokeRect(600, 150, 100, 100);
+        ctx.beginPath();
+        ctx.arc(900, 50, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = 'rgb(253, 166, 5)';
+        // ctx.stroke();
+        ctx.fill();
+        
+        ctx.strokeStyle = 'orange';
+        ctx.font = "30px Arial";
+        ctx.strokeText("Light House By Dareedyone", 10, 50);
+
+        
+        
+        
+        </script>
+</body>
+</html>
